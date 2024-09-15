@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemograma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hemograma 🩸</h1>
+    <p>Os valores de referência do hemograma geralmente variam de acordo com o sexo e idade do indivíduo.</p>
+    <p> ⚠️ Os resultados devem ser interpretados por um médico com base no caso clínico do paciente. ⚠️ </p>
+    <div class="container">
+        <div class="eritrograma">
+            <h2>Eritrograma - Série Vermelha </h2>
+            <input type="radio" id="sexom" name="sexo" value="homem">
+            <label for="m">Homem</label>
+            <input type="radio" id="sexof" name="sexo" value="mulher">
+            <label for="sexof">Mulher</label>
+
+            <p>Hemácias/RBC:</p>
+            <input type="number" name="rbc" id="rbc" placeholder="Insira o valor" required>
+            <p>Hemoglobina:</p>
+            <input type="number" placeholder="Insira o valor" id="hb" required>
+            <p>Hematócrito (HT):</p>
+            <input type="number" name="ht" id="ht" placeholder="Insira o valor" required>
+            <p>Volume Corpuscular Média (VCM):</p>
+            <input type="number" name="vcm" id="vcm" placeholder="Insira o valor" required>
+            <p>Concentração Hemoglobina (CHCM):</p>
+            <input type="number" name="chcm" id="chcm" placeholder="Insira o valor">
+            <p>RDW:</p>
+            <input type="number" name="rdw" id="rdw" placeholder="Insira o valor">
+            <button id="btn-hemograma">Verificar</button>
+            <div id="res-hemo"></div>
+        </div>
+
+        <div class="leucograma">
+            <h2>Leucograma - Série Branca</h2>
+            <p>Leucócitos:</p>
+            <input type="number" name="leuco" id="leuco" placeholder="Insira o valor" required>
+            <p>Basófilos:</p>
+            <input type="number" name="baso" id="baso" placeholder="Insira o valor" required>
+            <p>Eosinófilos:</p>
+            <input type="number" name="eosino" id="eosino" placeholder="Insira o valor" required>
+            <p>Mielócitos:</p>
+            <input type="number" name="mielo" id="mielo" placeholder="Insira o valor" required>
+            <p>Metamielócitos:</p>
+            <input type="number" name="metam" id="metam" placeholder="Insira o valor" required>
+            <p>Bastões:</p>
+            <input type="number" name="bast" id="bast" placeholder="Insira o valor" required>
+            <p>Linfócitos:</p>
+            <input type="number" name="linfo" name="linfo" id="linfo" placeholder="Insira o valor" required>
+            <p>Linfócitos atipícos:</p>
+            <input type="number" name="latip" id="latip" placeholder="Insira o valor" required>
+            <p>Monócitos:</p>
+            <input type="number" name="mono" id="mono" placeholder="Insira o valor" required>
+            <button id="btn-leucograma">Verificar</button>
+            <div id="res-leuco"></div>
+        </div>
+
+        <div class="plaquetas">
+            <h1>Plaquetograma</h1>
+            <p>Plaquetas:</p>
+            <input type="number" name="plaq" id="plaq" placeholder="Insira o valor" required>
+            <p>VPM:</p>
+            <input type="number" name="vpm" id="vpm" placeholder="Insira o valor" required>
+            <p>Plaquetócrito:</p>
+            <input type="number" name="plaqueto" id="plaqueto" placeholder="Insira o valor" required>
+            <p>PDW:</p>
+            <input type="number" name="pdw" id="pdw" placeholder="Insira o valor" required>
+            <button id="btn-plaq">Verificar</button>
+            <div id="res-plaq"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

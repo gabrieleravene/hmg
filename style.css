@@ -1,0 +1,47 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 14px;
+    background-color: rgb(255, 122, 122);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.eritrograma, .leucograma, .plaquetas{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.468);
+}
+
+button{
+    display: block;
+    margin: 5px auto;
+}
+
+label{
+    font-size: 13px;
+}
+
+#res-hemo{
+    margin-top: 7px;
+}
+
+
+
