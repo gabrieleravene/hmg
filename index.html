@@ -8,32 +8,8 @@
 </head>
 <body>
     <h1>Hemograma 🩸</h1>
-    <p>Os valores de referência do hemograma geralmente variam de acordo com o sexo e idade do indivíduo.</p>
-    <p> ⚠️ Os resultados devem ser interpretados por um médico com base no caso clínico do paciente. ⚠️ </p>
     <div class="container">
-        <div class="eritrograma">
-            <h2>Eritrograma - Série Vermelha </h2>
-            <input type="radio" id="sexom" name="sexo" value="homem">
-            <label for="m">Homem</label>
-            <input type="radio" id="sexof" name="sexo" value="mulher">
-            <label for="sexof">Mulher</label>
-
-            <p>Hemácias/RBC:</p>
-            <input type="number" name="rbc" id="rbc" placeholder="Insira o valor" required>
-            <p>Hemoglobina:</p>
-            <input type="number" placeholder="Insira o valor" id="hb" required>
-            <p>Hematócrito (HT):</p>
-            <input type="number" name="ht" id="ht" placeholder="Insira o valor" required>
-            <p>Volume Corpuscular Média (VCM):</p>
-            <input type="number" name="vcm" id="vcm" placeholder="Insira o valor" required>
-            <p>Concentração Hemoglobina (CHCM):</p>
-            <input type="number" name="chcm" id="chcm" placeholder="Insira o valor">
-            <p>RDW:</p>
-            <input type="number" name="rdw" id="rdw" placeholder="Insira o valor">
-            <button id="btn-hemograma">Verificar</button>
-            <div id="res-hemo"></div>
-        </div>
-
+            
         <div class="leucograma">
             <h2>Leucograma - Série Branca</h2>
             <p>Leucócitos:</p>
@@ -56,6 +32,28 @@
             <input type="number" name="mono" id="mono" placeholder="Insira o valor" required>
             <button id="btn-leucograma">Verificar</button>
             <div id="res-leuco"></div>
+        </div>
+
+        <div class="eritrograma">
+            <h2>Eritrograma - Série Vermelha </h2>
+            <input type="radio" id="sexom" name="sexo" value="homem">
+            <label for="m">Homem</label>
+            <input type="radio" id="sexof" name="sexo" value="mulher">
+            <label for="sexof">Mulher</label>
+            <p>Hemácias/RBC:</p>
+            <input type="number" name="rbc" id="rbc" placeholder="Insira o valor" required>
+            <p>Hemoglobina:</p>
+            <input type="number" placeholder="Insira o valor" id="hb" required>
+            <p>Hematócrito (HT):</p>
+            <input type="number" name="ht" id="ht" placeholder="Insira o valor" required>
+            <p>Volume Corpuscular Média (VCM):</p>
+            <input type="number" name="vcm" id="vcm" placeholder="Insira o valor" required>
+            <p>Concentração Hemoglobina (CHCM):</p>
+            <input type="number" name="chcm" id="chcm" placeholder="Insira o valor">
+            <p>RDW:</p>
+            <input type="number" name="rdw" id="rdw" placeholder="Insira o valor">
+            <button id="btn-hemograma">Verificar</button>
+            <div id="res-hemo"></div>
         </div>
 
         <div class="plaquetas">
